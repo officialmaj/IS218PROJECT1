@@ -14,11 +14,13 @@
 
 	<body>
 
-		<form id="loginForm">
+		<form id="loginForm" method="post" action="<?php echo
+		htmlspecialchars($_SERVER["PHP_SELF"];?>">
 
-			<input type="email" placeholder="Email">
+
+			<input type="email" name="email" placeholder="Email">
 			<br>
-			<input type="password" placeholder="Password">
+			<input type="password" name="password" placeholder="Password">
 
 		</form>
 
