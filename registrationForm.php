@@ -29,10 +29,16 @@
 				<input type"date" id="birthday"
 				placeholder="Enter your birthday">
 			</div>
-			<div>
+			<div class="form-field">
 				<label for"email"> Email </label>
 				<input type="email" id="email"
 				placeholder="Enter your email address">
+			</div>
+
+			<div class="form-field">
+				<label for="password"> Password </label>
+				<input type="text" id="password"
+				placeholder="Enter your password">
 			</div>
 
 
