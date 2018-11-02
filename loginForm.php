@@ -8,22 +8,33 @@
 			Login Form
 
 		</title>
-
+	
+		
+		<link rel="stylesheet" type="text/css" href="login.css">
+	
 
 	</head>
 
 	<body>
 
-		<form id="loginForm" method="post" action="<?php echo
-		htmlspecialchars($_SERVER["PHP_SELF"];?>">
+		<form id="loginForm" method="post" action="<?php $_PHP_SELF ?>">
 
 
-			<input type="email" name="email" placeholder="Email">
+			<input id="email" type="email" name="email" placeholder="Email" value="<?php echo $email?>">
+
+				<?php 
+				
+					$email = $_POST['email'];
+					echo($email);
+
+				?>
+
 			<br>
-			<input type="password" name="password" placeholder="Password">
+			<input id="password" type="password" name="password" placeholder="Password" value="<?php echo $password ?>">
 
-		</form>
+			<input id="submit" type="submit" name="submit"
 
+							
 
 	</body>
 
