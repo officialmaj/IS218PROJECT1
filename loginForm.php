@@ -46,12 +46,71 @@
 
 					}
 
+					else 
+
+					{
+						echo ($email);
+
+
+					}
+
+
+
 
 
 				?>
 				
 			<br>
-			<input id="password" type="password" name="password" placeholder="Password" value="<?php echo $password ?>">
+			<input id="password" type="password" name="password" placeholder="Password" value="<?php $_PHP_SELF ?>">
+					
+					<?php
+					$password = $_POST['password'];
+
+					if($password == "")
+					{
+
+						echo "<p>" . " required" . "</p>";
+						echo "<style>" .
+
+							"p 
+							{
+								color:red;
+								display: inline;
+							}"
+							
+							. "</style>";
+					}
+
+					elseif(8 > strlen($password))
+
+					{
+						echo("<p>" . "password must be 8 characters or longer" . "</p>");
+						echo "<style>" . 
+
+							"p {
+
+								color: red;
+								display: inline;
+
+							}"
+
+							. "</style>";
+					
+					
+					}
+
+
+					else
+
+					{
+
+						echo ($password);
+						
+					}
+
+
+					?>
+
 			<br> <br>
 			<input id="submit" type="submit" name="submit"
 
