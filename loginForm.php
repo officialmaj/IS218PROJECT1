@@ -32,7 +32,7 @@
 					{
 
 						echo "<p style =
-						\"display:inline\">" . " required" . "<p>";
+						\"display:inline\">" . " * required" . "<p>";
 						echo "<style>" . 
 						
 							"p 
@@ -69,7 +69,7 @@
 					if($password == "")
 					{
 
-						echo "<p>" . " required" . "</p>";
+						echo "<p>" . " * required" . "</p>";
 						echo "<style>" .
 
 							"p 
@@ -105,20 +105,18 @@
 					{
 
 						echo ($password);
-						
+					
 					}
 
 
 					?>
 
 			<br> <br>
-			<input id="submit" type="submit" name="submit"
+			<input id="submit" type="submit" name="submit">
 
-							
+		</form>	
 
 	</body>
-
-
 
 
 
