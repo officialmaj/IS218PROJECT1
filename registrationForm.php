@@ -49,7 +49,7 @@
 					}
 
 					?>
-				<br>
+				<br><br>
 
 				<label name="lname"> Last Name </label>
 				<input type="text" id="lname" name="lname"
@@ -88,8 +88,9 @@
 
 					?>
 
-				<br>
 
+				<br>
+				<br>
 				<label name="birthday"> Birthday </label>
 				<input type"date" id="birthday" name="birthday"
 				placeholder="Enter your birthday">
@@ -127,6 +128,7 @@
 					?>
 
 				<br>
+				<br>
 				<label name="email"> Email </label>
 				<input type="email" id="email" name="email"
 				placeholder="Enter your email address">
@@ -163,6 +165,7 @@
 
 					?>
 
+				<br>
 				<br>
 
 				<label name="password"> Password </label>
